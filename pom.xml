@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.votreorganisation</groupId>
+  <artifactId>MyWebApp</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>MyWebApp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+  	  <groupId>javax.servlet</groupId>
+   	  <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-text -->
+	<dependency>
+	    <groupId>org.apache.commons</groupId>
+	    <artifactId>commons-text</artifactId>
+	    <version>1.10.0</version>
+	</dependency>
+
+  </dependencies>
+  <build>
+	  <pluginManagement>
+	<plugins>
+		<plugin>
+          <groupId>org.apache.tomcat.maven</groupId>
+          <artifactId>tomcat7-maven-plugin</artifactId>
+          <version>2.0</version>
+          </plugin>
+        </plugins>
+	  </pluginManagement>
+  </build>
+  <distributionManagement>
+    <repository>
+        <id>myLocalRepo</id>
+        <url>file:///C:/projet1Maven/myLocalRepo</url>
+    </repository>
+    <snapshotRepository>
+        <id>myLocalSnapshotRepo</id>
+        <url>file:///C:/projet1Maven/myLocalSnapshotRepo</url>
+    </snapshotRepository>
+</distributionManagement>
+	    
+</project>
